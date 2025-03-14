@@ -30,7 +30,7 @@ public class OpenIAController {
     public String gerarReceita(@RequestParam String tipo, @RequestParam List<String> ingredientes) {
         String mensagem = String.format(
                 "Você é um chef de cozinha especializado em alimentação saudável. Crie uma receita para uma marmita %s usando os seguintes ingredientes: %s. " +
-                        "A receita deve incluir: 1. Modo de preparo passo a passo 2. Informações nutricionais aproximadas 3. Dicas de armazenamento.",
+                        "A receita deve incluir: 1. Modo de preparo passo a passo 2. Informações nutricionais aproximadas 3. Dicas de armazenamento. , se for (vegetariana) descarte proteinas animais",
                 tipo, String.join(", ", ingredientes)
         );
 
