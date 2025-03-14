@@ -1,0 +1,5 @@
+ALTER TABLE ingredientes
+ALTER COLUMN calorias DROP NOT NULL;
+
+ALTER TABLE ingredientes
+ALTER COLUMN validade DROP NOT NULL;
